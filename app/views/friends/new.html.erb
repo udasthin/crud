@@ -1,0 +1,7 @@
+<h1>新規登録</h1>
+<%= form_with model: @friend,local:true do |f| %>
+  <h2>名前：<%= f.text_field :name %></h2>
+  <h2>ポイント：<%= f.text_field :point %></h2>
+  <h2>ゴール：<%= f.text_field :goal %></h2>
+  <%= f.submit "送信" %>
+<% end %>

@@ -1,0 +1,8 @@
+<h1>edit</h1>
+<h1>編集</h1>
+<%= form_with model:@friend,local:true do |f| %>
+  <p>お名前：<%= f.text_field:name %></p>
+  <p>ポイント：<%= f.text_field:point %></p>
+  <p>ゴール：<%= f.text_field:goal %></p>
+  <%= f.submit "送信" %>
+<% end %>

@@ -1,0 +1,12 @@
+<h1>index.html.erbの画面</h1>
+<%= link_to "投稿画面へ", new_friend_path %>
+<% @friends.each do |friend| %>
+  <p>
+    名前：<%= friend.name %>
+    ポイント：<%= friend.point %>
+    ゴール：<%= friend.goal %>
+    </p>
+  <%= link_to "詳細", friend_path(friend) %>
+  <%= link_to "編集", edit_friend_path(friend) %>
+  <%= link_to "削除", friend_path(friend),method: :delete,data:{confirm: "削除しますか？"} %>
+<% end %>
