@@ -24,6 +24,9 @@ namespace :import_csv do
         # 例外が発生した場合の処理
         # インポートができなかった場合の例外処理
         puts "インポートに失敗：UnknownAttributeError"
+      end
     end
   end
 end
+
+
